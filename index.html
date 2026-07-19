@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>…</title>
+<style>html,body{margin:0;height:100vh;display:grid;place-items:center;background:#0f1216}
+.d{width:32px;height:32px;border:3px solid #2a3442;border-top-color:#5ec2ff;border-radius:50%;animation:s .8s linear infinite}
+@keyframes s{to{transform:rotate(360deg)}}</style></head>
+<body><div class="d"></div>
+<script>fetch("endpoint.json?_="+Date.now(),{cache:"no-store"}).then(function(r){return r.json();}).then(function(d){var u=(d&&d.url||"").replace(/\/$/,"");if(u)location.replace(u+"/"+(location.search||""));}).catch(function(){});</script>
+</body></html>
